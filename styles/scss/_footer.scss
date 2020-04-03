@@ -1,0 +1,12 @@
+footer{
+    position: relative;
+}
+
+.bottom-bar{
+    display:flex;
+    justify-content: space-between;
+    margin: 0 ;
+    position: absolute;
+    bottom: -79px;
+    width: 100%;
+}
