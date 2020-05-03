@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./styles/scss/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <title>Virtual LucOS</title>
 </head>
@@ -13,11 +13,11 @@
         <section class="desktop"  onload="startTime()">
             <div class="wrapper">
                 <ul class="menu-icons">
-                    <li id="icon"  ><img src="./styles/assets/png/recycle_bin_empty-0.png" alt="recycle bin">recycle-bin</li>
-                    <li id="icon2"  ><img src="./styles/assets/png/directory_closed_cool-0.png" alt="folder">documents</li>
-                    <li id="icon3"><img src="./styles/assets/png/msie1-2.png" alt="cool link">cool-website-i-found</li>
-                    <li id="icon4"><img src="./styles/assets/png/notepad-5.png" alt="notepad">notepad</li>
-                    <li id="icon5"><img src="./styles/assets/png/joystick-5.png" alt="games">GAMES!</li>
+                    <li id="icon"  ><img src="./styles/assets/png/recycle_bin_empty-0.png" alt="recycle bin"><p>recycle-bin</p></li>
+                    <li id="icon2"  ><img src="./styles/assets/png/directory_closed_cool-0.png" alt="folder"><p>documents </p> </li>
+                    <li id="icon3"><img src="./styles/assets/png/msie1-2.png" alt="cool link"><p>cool-website-i-found </p> </li>
+                    <li id="icon4"><img src="./styles/assets/png/notepad-5.png" alt="notepad"><p> notepad </p></li>
+                    <li id="icon5"><img src="./styles/assets/png/joystick-5.png" alt="games"><p>GAMES! </p> </li>
                 </ul>
                 </div>
             </div>
@@ -27,7 +27,8 @@
         <section class="bottom-bar" >
             <button class="start-button">
                 <a href="#">
-                    start <img src="./styles/assets/png/windows-5.png" alt="start">
+                    <p> start  </p>
+                    <img src="./styles/assets/png/windows-5.png" alt="start">
                 </a>
             </button>
             <div class="open-window">
@@ -43,10 +44,11 @@
 </body>
 <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="./script/script.js"></script>
+
 <script src="https://threejs.org/build/three.js"></script>
 <script src="./three.js"></script>
-<script>
+<script src="./script/script.js"></script>
+<!-- <script>
     var scene = new THREE.Scene();
         var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
@@ -71,6 +73,6 @@
         };
 
         animate();
-</script>
+</script> -->
 
 </html>

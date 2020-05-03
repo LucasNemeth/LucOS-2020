@@ -1,5 +1,6 @@
 footer{
     position: relative;
+ 
 }
 
 .bottom-bar{
@@ -9,4 +10,13 @@ footer{
     position: absolute;
     bottom: -79px;
     width: 100%;
+    background: #b6b6b6;
+}
+
+.start-button{
+    a{
+        width: 50px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }
