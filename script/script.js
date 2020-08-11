@@ -13,7 +13,7 @@ currentTime = () => {
     hour = updateTime(hour);
     min = updateTime(min);
     sec = updateTime(sec);
-    $(".txt").text(hour + " : " + min + " : " + sec + " " + midday);
+    $(".txt").text(hour + " : " + min + " " + midday);
     let timeOut = setTimeout(function () {
         currentTime()
     }, 1000);
@@ -64,10 +64,20 @@ var animate = function () {
 animate();
 
 $(".icon").dblclick(function(){
-    console.log("howdy");
-    if ($(".icon").hasClass("recycle")){
-        console.log("aloha")
-    }else if($(".icon").hasClass("folder")){
+    if ($(this).hasClass("recycle")){
+        $(".window-recycle").addClass("active");
+        console.log("aloha");
+    }else if($(this).hasClass("folder")){
+        $(".window-folder").addClass("active");
         console.log("pop it")
+    }else if ($(this).hasClass("website")){
+        $(".window-website").addClass("active");
+        console.log("fecalfunny.com")
+    }else if($(this).hasClass("notes")){
+        $(".window-notes").addClass("active");
+        console.log("writeit")
+    }else{
+        $(".window-games").addClass("active");
+        console.log("gamertown")
     }
 })

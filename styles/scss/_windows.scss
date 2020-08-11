@@ -1,0 +1,14 @@
+.window-recycle,
+.window-folder,
+.window-website,
+.window-notes,
+.window-games {
+    display: none;
+}
+
+.window-recycle.active{
+    display:block;
+    width: 500px;
+    background-color: hotpink;
+    z-index: 22;
+}
