@@ -1,35 +1,41 @@
+currentTime = () => {
+    let date = new Date();
+    let day = date.getDay();
+    let hour = date.getHours();
+    let min = date.getMinutes();
+    let sec = date.getSeconds();
+    let midday = "AM";
+    // console.log(sec)
+    midday = (hour >= 12) ? "PM" : "AM";
+
+    hour = (hour == 0) ? 12 : ((hour > 12) ? (hour - 12) : hour);
+    day = updateTime(day);
+    hour = updateTime(hour);
+    min = updateTime(min);
+    sec = updateTime(sec);
+    $(".txt").text(hour + " : " + min + " : " + sec + " " + midday);
+    let timeOut = setTimeout(function () {
+        currentTime()
+    }, 1000);
+
+
+}
+
+ updateTime = (k) => {
+    if (k < 10) {
+        return "0" + k;
+    } else {
+        return k;
+    }
+}
+
+currentTime();
+
 $(function () {
-    $("#icon").draggable();
-});
-$(function () {
-    $("#icon2").draggable();
-});
-$(function () {
-    $("#icon3").draggable();
-});
-$(function () {
-    $("#icon4").draggable();
-});
-$(function () {
-    $("#icon5").draggable();
+    $(".icon").draggable();
 });
 
 
-function startTime() {
-    let today = new Date();
-    const h = today.getHours();
-    let m = today.getMinutes();
-    let s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('txt').innerHTML =
-        h + ":" + m + ":" + s;
-    var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
-    return i;
-}
 
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -56,3 +62,12 @@ var animate = function () {
 };
 
 animate();
+
+$(".icon").dblclick(function(){
+    console.log("howdy");
+    if ($(".icon").hasClass("recycle")){
+        console.log("aloha")
+    }else if($(".icon").hasClass("folder")){
+        console.log("pop it")
+    }
+})

@@ -13,11 +13,11 @@
         <section class="desktop"  onload="startTime()">
             <div class="wrapper">
                 <ul class="menu-icons">
-                    <li id="icon"  ><img src="./styles/assets/png/recycle_bin_empty-0.png" alt="recycle bin"><p>recycle-bin</p></li>
-                    <li id="icon2"  ><img src="./styles/assets/png/directory_closed_cool-0.png" alt="folder"><p>documents </p> </li>
-                    <li id="icon3"><img src="./styles/assets/png/msie1-2.png" alt="cool link"><p>cool-website-i-found </p> </li>
-                    <li id="icon4"><img src="./styles/assets/png/notepad-5.png" alt="notepad"><p> notepad </p></li>
-                    <li id="icon5"><img src="./styles/assets/png/joystick-5.png" alt="games"><p>GAMES! </p> </li>
+                    <li class="icon recycle"><img src="./styles/assets/png/recycle_bin_empty-0.png" alt="recycle bin"><p>recycle-bin</p></li>
+                    <li class="icon folder" ><img src="./styles/assets/png/directory_closed_cool-0.png" alt="folder"><p>documents </p> </li>
+                    <li class="icon website"><img src="./styles/assets/png/msie1-2.png" alt="cool link"><p>cool-website-i-found </p> </li>
+                    <li class="icon notes"><img src="./styles/assets/png/notepad-5.png" alt="notepad"><p> notepad </p></li>
+                    <li class="icon games"><img src="./styles/assets/png/joystick-5.png" alt="games"><p>GAMES! </p> </li>
                 </ul>
                 </div>
             </div>
@@ -36,7 +36,7 @@
             </div>
             <div class="tool-bar">
                 <div class="clock">
-                    <h2 class="txt">4:24</h2>
+                    <h2 class="txt"></h2>
                 </div>
             </div>
         </section>
@@ -48,31 +48,5 @@
 <script src="https://threejs.org/build/three.js"></script>
 <script src="./three.js"></script>
 <script src="./script/script.js"></script>
-<!-- <script>
-    var scene = new THREE.Scene();
-        var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-
-        var renderer = new THREE.WebGLRenderer();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        document.body.appendChild(renderer.domElement);
-
-        var geometry = new THREE.BoxGeometry();
-        var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-        var cube = new THREE.Mesh(geometry, material);
-        scene.add(cube);
-
-        camera.position.z = 5;
-
-        var animate = function () {
-            requestAnimationFrame(animate);
-
-            cube.rotation.x += 0.01;
-            cube.rotation.y += 0.01;
-
-            renderer.render(scene, camera);
-        };
-
-        animate();
-</script> -->
 
 </html>
