@@ -33,6 +33,7 @@ currentTime();
 
 $(function () {
     $(".icon").draggable();
+    $(".window").draggable();
 });
 
 
@@ -66,18 +67,19 @@ animate();
 $(".icon").dblclick(function(){
     if ($(this).hasClass("recycle")){
         $(".window-recycle").addClass("active");
-        console.log("aloha");
     }else if($(this).hasClass("folder")){
         $(".window-folder").addClass("active");
-        console.log("pop it")
     }else if ($(this).hasClass("website")){
         $(".window-website").addClass("active");
-        console.log("fecalfunny.com")
     }else if($(this).hasClass("notes")){
         $(".window-notes").addClass("active");
-        console.log("writeit")
     }else{
         $(".window-games").addClass("active");
-        console.log("gamertown")
     }
 })
+
+$(".close-window").on('click', (function(){
+    console.log("can you hear me now?")
+    $(".window-recycle").removeClass("active")
+
+}))

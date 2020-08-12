@@ -6,9 +6,26 @@
     display: none;
 }
 
-.window-recycle.active{
+.window.active{
     display:block;
     width: 500px;
     background-color: hotpink;
     z-index: 22;
+    position: absolute;
+}
+
+.window-border{
+    display: flex;
+    justify-content: space-between;
+}
+
+.close-window{
+    font-size: 1.5rem;
+    background: hotpink;
+    border: 2px groove #e02d87;
+    // border-top-style: 2px solid #a12b66;
+    // border-left-style: 2px solid #a12b66; 
+    // border-right-style: 2px solid blue;
+    // border-bottom-style: 2px solid blue;
+
 }

@@ -261,6 +261,16 @@ p {
   margin: 0 auto;
 }
 
+.txt {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.start-button a p {
+  color: black;
+  padding-top: 7px;
+}
+
 .desktop {
   height: 85vh;
 }
@@ -331,9 +341,25 @@ footer {
   display: none;
 }
 
-.window-recycle.active {
+.window.active {
   display: block;
   width: 500px;
   background-color: hotpink;
   z-index: 22;
+  position: absolute;
+}
+
+.window-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.close-window {
+  font-size: 1.5rem;
+  background: hotpink;
+  border: 2px groove #e02d87;
 }
