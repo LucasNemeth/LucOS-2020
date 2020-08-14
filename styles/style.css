@@ -304,6 +304,10 @@ canvas {
   z-index: -1;
 }
 
+ul {
+  list-style: none;
+}
+
 footer {
   position: relative;
 }
@@ -344,7 +348,7 @@ footer {
 .window.active {
   display: block;
   width: 500px;
-  background-color: hotpink;
+  background-color: #35c5d8;
   z-index: 22;
   position: absolute;
 }
@@ -356,6 +360,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background: hotpink;
 }
 
 .close-window {

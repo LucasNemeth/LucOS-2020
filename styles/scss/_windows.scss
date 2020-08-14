@@ -9,14 +9,16 @@
 .window.active{
     display:block;
     width: 500px;
-    background-color: hotpink;
+    background-color: #35c5d8;
     z-index: 22;
     position: absolute;
+
 }
 
 .window-border{
     display: flex;
     justify-content: space-between;
+    background: hotpink;
 }
 
 .close-window{

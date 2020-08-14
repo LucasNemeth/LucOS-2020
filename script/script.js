@@ -79,7 +79,16 @@ $(".icon").dblclick(function(){
 })
 
 $(".close-window").on('click', (function(){
-    console.log("can you hear me now?")
-    $(".window-recycle").removeClass("active")
-
+    if($(this).hasClass("recycle")){
+        $(".window-recycle").removeClass("active")
+    } else if ($(this).hasClass("folder")) {
+        $(".window-folder").removeClass("active");
+    } else if ($(this).hasClass("website")) {
+        $(".window-website").removeClass("active");
+    } else if ($(this).hasClass("notes")) {
+        $(".window-notes").removeClass("active");
+    } else {
+        $(".window-games").removeClass("active");
+    
+    }
 }))
