@@ -1,3 +1,35 @@
+$(function() {
+    $('#text').on('keyup', function () {
+        let content = $(this).val();
+        setTitle(content);
+        setLineNumber(content);
+    });
+
+    $('#text').on('focus click', function () {
+        let content = $(this).val();
+        setLineNumber(content);
+    });
+});
+
+function setTitle(content) {
+    var lines = content.split('\n');
+
+    for (i = 0; i < lines.length; i++) {
+        if (lines[i].trim().length > 0) {
+            document.title = lines[i];
+            return 0;
+        }
+    }
+
+    document.title = "Notepad";
+}
+
+function setLineNumber(content) {
+    var lineNumber = content.substr(0, $('#text').prop('selectionStart')).split("\n").length;
+    $('#lineNumber').html(lineNumber);
+}
+
+
 currentTime = () => {
     let date = new Date();
     let day = date.getDay();
