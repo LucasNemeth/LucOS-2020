@@ -368,3 +368,19 @@ footer {
   background: hotpink;
   border: 2px groove #e02d87;
 }
+
+.inner-window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.quick-access {
+  padding: 0 0 5px 5px;
+  width: 30%;
+}
+
+.folder-contents-container,
+.recycle-contents-container {
+  width: 70%;
+}

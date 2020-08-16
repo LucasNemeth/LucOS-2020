@@ -31,3 +31,18 @@
     // border-bottom-style: 2px solid blue;
 
 }
+
+.inner-window{
+    display: flex;
+}
+
+.quick-access{
+    padding: 0 0 5px 5px;
+    width:30%;
+    // border-right: 2px solid hotpink;
+}
+
+.folder-contents-container,
+.recycle-contents-container{
+    width:70%;
+}
