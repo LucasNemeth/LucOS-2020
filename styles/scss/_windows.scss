@@ -34,15 +34,24 @@
 
 .inner-window{
     display: flex;
+    height: 200px;
 }
 
 .quick-access{
     padding: 0 0 5px 5px;
     width:30%;
     // border-right: 2px solid hotpink;
+    li{
+        margin-bottom: 10px;
+    }
 }
 
 .folder-contents-container,
 .recycle-contents-container{
     width:70%;
+}
+
+.window{
+    left: 175px;
+    top: -225px;
 }

@@ -373,6 +373,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 200px;
 }
 
 .quick-access {
@@ -380,9 +381,18 @@ footer {
   width: 30%;
 }
 
+.quick-access li {
+  margin-bottom: 10px;
+}
+
 .folder-contents-container,
 .recycle-contents-container {
   width: 70%;
+}
+
+.window {
+  left: 175px;
+  top: -225px;
 }
 
 #text {
